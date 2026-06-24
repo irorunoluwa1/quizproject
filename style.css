@@ -110,14 +110,7 @@ h1{
 }
 
 
-footer{
-  background: #45a049;
-  
-  text-align: center;
-  color: #ffdd57;
-  height: auto;
-  margin-top: 1rem;
-}
+
 
 
 @media(max-width:768px){
