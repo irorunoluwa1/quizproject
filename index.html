@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name=" viewport" content="width=device-width", initial-scale="1.0">
+    <title>Interactive Quiz App</title>
+    <link rel="stylesheet" href="/module-3/projects-1/style.css">
+     <link rel="stylesheet" href="/module-3/projects-1/reset.css">
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">🧠 Trivia</div>
+        <ul class="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+      
+      </nav>
+    </header>
+    <main>
+      <div class="container">
+       <h1>The Everyday Trivia Quiz</h1>
+    
+     <form id="quizForm">
+      <div class="question" id="q1">
+      <p>How many players does a football team have on the field?</p>
+      <div class="opts">
+      <label><input type="radio" name="q1" value="a">9</label>
+      <label><input type="radio" name="q1" value="b">10</label>
+      <label><input type="radio" name="q1" value="c">11</label>
+      <label><input type="radio" name="q1" value="d">12</label>
+      </div>
+
+      <p class="error" id="err-q1"></p>
+      </div>
+
+      <div class="question" id="q2">
+        <p>Which instrument has black and white keys?</p>
+        <div class="opts">
+           <label><input type="radio" name="q2" value="a">harp</label>
+        <label><input type="radio" name="q2" value="b">piano</label>
+        <label><input type="radio" name="q2" value="c">violin</label>
+        <label><input type="radio" name="q2" value="d">drums</label>
+    
+        </div>
+      
+        <p class="error" id="err-q2"></p>
+      </div>
+
+
+      <div class="question" id="q3">
+        <p>How many days are in a leap year?</p>
+        <div class="opts">
+        <label><input type="radio" name="q3" value="a">364</label>
+        <label><input type="radio" name="q3" value="b">365</label>
+        <label><input type="radio" name="q3" value="c">366</label>
+        <label><input type="radio" name="q3" value="d">367</label>
+        </div>
+        <p class="error" id="err-q3"></p>
+      </div>
+      <div class="question" id="q4">
+        <p>What is 1+1?</p>
+        <div class="opts">
+        <label><input type="radio" name="q4" value="a">9</label>
+        <label><input type="radio" name="q4" value="b">5</label>
+        <label><input type="radio" name="q4" value="c">3</label>
+        <label><input type="radio" name="q4" value="d">2</label>
+        </div>
+
+        <p class="error" id="err-q4"></p>
+      </div>
+      <div class="question" id="q5">
+        <p>What is the capital of Nigeria?</p>
+        <div class="opts">
+        <label><input type="radio" name="q5" value="a">Lagos</label>
+        <label><input type="radio" name="q5" value="b">Edo</label>
+        <label><input type="radio" name="q5" value="c">Abeokuta</label>
+        <label><input type="radio" name="q5" value="d">Abuja</label>
+        </div>
+        <p class="error" id="err-q5"></p>
+      </div>
+
+
+      <button type="submit" id="submitBtn" hidden>Submit Quiz</button>
+      <button type="button" id="resetBtn">Reset Quiz</button>
+     </form>
+      <div id="error"></div>
+      <div id="result"></div>
+      </div>
+  
+    </main>
+    <br>
+    <footer>
+      <br>
+      &copy; 2026 Iroruoluwa Aregbesola Interactive Quiz App.
+    </footer>
+<script src="/module-3/projects-1/script.js"></script>
+  </body>
+</html>

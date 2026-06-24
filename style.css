@@ -1,0 +1,177 @@
+html{
+  font-size: 1rem;
+}
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  
+  background-color: #f4f4f4;
+}
+
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  background: #45a049;
+  margin-bottom: 3rem;
+  height: 3rem;
+
+}
+.logo{
+  font-size: 2rem;
+  color: #ffdd57;
+}
+.nav-links{
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+  margin-top: 0.8rem;
+   margin-right: 2rem;
+}
+.nav-links li a{
+  text-decoration: none;
+  color: white;
+  font-size: 1.5rem;
+  transition: 0.2s;
+}
+
+.nav-links li a:hover{
+  color: #ffdd57;
+  transform: scale(1.1);
+}
+.container{
+  padding: 2rem;
+  max-width: 90rem;
+  margin: 0 auto;
+}
+h1{
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  color: #333;
+}
+#quizForm{
+  display: grid;
+  gap: 2rem;
+}
+.question{
+  background: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 1rem rgba(34, 32, 32, 0.2);
+}
+.question label{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 1rem 0;
+  font-size: 1.2rem;
+}
+
+.error{
+  color: red;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+#resetBtn{
+  background-color: #45a049;
+  background: #4caf50;
+  color: white;
+  padding: 1.5rem;
+  border: none;
+  border-radius: 1rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: 0.5s;
+}
+#submitBtn{
+  background: #4caf50;
+  color: white;
+  padding: 1.5rem;
+  border: none;
+  border-radius: 1rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+#submitBtn:hover{
+  background: #45a049;
+}
+.error{
+  color: red;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
+
+#result{
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+
+footer{
+  background: #45a049;
+  
+  text-align: center;
+  color: #ffdd57;
+  height: auto;
+  margin-top: 1rem;
+}
+
+
+@media(max-width:768px){
+  body{
+    padding: 1rem;
+  }
+  .navbar{
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    padding: 1.5rem;
+    text-align: center;
+    gap: 1rem;
+  }
+  .nav-links{
+    flex-direction: column;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+  }
+  .nav-links li {
+    margin: 0;
+  }
+  .logo{
+    font-size: 1.8rem;
+  }
+  .container{
+    width: 100%;
+    padding: 1rem;
+  }
+  h1{
+    font-size: 1.8rem;
+  }
+  #quizForm{
+    grid-template-columns:1fr;
+    gap: 1.5rem;
+  }
+
+  .question{
+    padding: 1.5rem;
+  }
+  .question label{
+    font-size: 1.4rem;
+  }
+  #submitBtn{
+    width: 100%;
+  }
+
+  #result{
+    font-size: 1.6rem;
+  }
+  .footer{
+    height: auto;
+    padding: 1rem;
+    font-size: 1.4rem;
+  }
+}
